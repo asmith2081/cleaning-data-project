@@ -15,7 +15,7 @@ Test
 Required packages: dplyr
 
 run_analysis.R executes the following steps:
-1. Loads the dplyr package
+1. Loads the dplyr package  
 2. Reads the data files from the working directory and adds the feature names to the columns of the data frames
 3. cbinds the subject, X_test, and y_test data
 4. cbinds the subject, X_train, and y_train data
