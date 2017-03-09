@@ -3,7 +3,6 @@ library("dplyr")
 
 ## Read data files
 features <- read.table("features.txt")
-activity_names <- read.table("activity_labels.txt")
 xtest <- read.table("test/X_test.txt", col.names = features$V2)
 ytest <- read.table("test/y_test.txt", col.names = c("activity name"))
 subtest <- read.table("test/subject_test.txt", col.names = c("subject"))
@@ -17,7 +16,7 @@ merged_test <- cbind(subtest, ytest, xtest)
 ## Merge train data
 merged_train <- cbind(subtrain, ytrain, xtrain)
 
-## Merge test and train data
+## Join test and train data
 merged_data <- full_join(merged_test, merged_train)
 
 ## Extract only the measurements on mean and stdev for each measurement
@@ -53,6 +52,7 @@ final_data <- rbind(subject_avgs, activity_avgs)
 ## fix variable names
 names(final_data) <- gsub("\\.", "", names(final_data))
 names(final_data) <- paste0("Average", names(final_data))
+final_data <- rename(final_data, "obs" = Averageobs)
 
 ## Write the tidy txt file
 write.table(final_data, "tidy.txt", quote = FALSE, row.names = FALSE)
