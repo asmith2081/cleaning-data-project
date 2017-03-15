@@ -21,7 +21,6 @@ Required packages: dplyr
 
 run_analysis.R executes the following steps:  
 1. Loads the dplyr package  
-<<<<<<< HEAD
 2. Reads the data files from the working directory and adds the feature names to the columns of the data frames
 3. cbinds the subject, X_test, and y_test data
 4. cbinds the subject, X_train, and y_train data
@@ -46,4 +45,3 @@ run_analysis.R executes the following steps:
 12. rbinds the to data frames with average values into a final data set  
 13. Make variable names readable and descriptive  
 14. Write a .txt file with the new data set  
->>>>>>> 2aa086bc3b3f7ea4af9fb0315216c5df749d66fa
