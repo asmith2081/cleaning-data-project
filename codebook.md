@@ -1,8 +1,12 @@
 Features in tidy.txt are derived by taking the average of the features by subject and activity from the raw data described below.
 
+Variables carried over from raw data
+====================================
+subject  
+activity  
+
 Derived features
 ================
-obs - activity name or subject code
 AveragetBodyAccmeanX
 AveragetBodyAccmeanY
 AveragetBodyAccmeanZ
