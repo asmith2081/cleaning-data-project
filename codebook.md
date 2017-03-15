@@ -7,7 +7,6 @@ activity
 
 Derived features
 ================
-<<<<<<< HEAD
 AveragetBodyAccmeanX
 AveragetBodyAccmeanY
 AveragetBodyAccmeanZ
